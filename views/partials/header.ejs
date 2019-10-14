@@ -1,6 +1,51 @@
 <nav role="navigation">
-  <ul>
-    <li><a href="/home">Home</a></li>
-    <li><a href="#">Statisticas</a></li> 
-  </ul>
+    <nav id="menu" class="navbar navbar-expand-lg  navbar-light  bg-warning   ">
+
+        <!-- <div class="container"> -->
+            <a class="navbar-brand h1 mb-0" href="#">Me Lê</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSite">
+
+
+                <ul class="nav nav-pills nav-pills mr-auto " id="pills-nav" role="tablist">
+
+                    <li class="nav-item" >
+                        <a class="nav-link active" id="nav-pills-01" data-toggle="pill" href="#nav-iten-01">Meus Livros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " id="nav-pills-02" data-toggle="pill" href="#nav-iten-02">Todos os livros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-pills-03" data-toggle="pill" href="#nav-iten-03">Score</a>
+                    </li>
+
+                </ul>
+
+
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Mais Opções</a>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Home</a>
+                            <a class="dropdown-item" href="#">Logout</a>
+                            <a class="dropdown-item" href="#">Foda-se</a>
+
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control ml-4 mr-2" type="search" placeholder="Buscar...">
+                    <button class="btn btn-primary" type="Submit">ok</button>
+                </form>
+
+            </div>
+        <!-- </div> -->
+    </nav>
 </nav>

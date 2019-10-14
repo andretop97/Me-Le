@@ -6,16 +6,18 @@ window.addEventListener('load', () => {
     }).then((response) => {
       
       let books = response.data.books;
-      let container = document.getElementById('container');
+      let container = document.getElementById('cont');
       console.log(books)
       for (let i =0; i < books.length; i++) {
-        container.innerHTML = 
-        `<div class="card" style="width: 15rem; height: 7rem">
-          <img src="${books[i].image}" width="150px" height="150px" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">${books[i].title}</h5>
-            <p class="card-text">${books[i].description}</p>
-            <a class="btn btn-primary" onclick="teste('${books[i]._id}')">Acessar Quiz's</a>
+        container.innerHTML += 
+        `<div class="col-sm-3">
+          <div class="card my-5">
+            <img class="card-img-top"  src="${books[i].image}" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">${books[i].title}</h5>
+              <p class="card-text text-justify">${books[i].description}</p>
+              <a class="btn btn-primary" onclick="teste('${books[i]._id}')">Acessar Quiz's</a>
+            </div>
           </div>
         </div>`
       }
@@ -28,4 +30,9 @@ window.addEventListener('load', () => {
 function teste(id) {
   sessionStorage.setItem('idBook', id);
   window.location.href = 'http://localhost:3000/quizes'
+}
+
+function logout() {
+  sessionStorage.clear();
+  window.location.href = 'http://localhost:3000/login'
 }

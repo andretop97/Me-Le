@@ -14,32 +14,5 @@ body {
   color: white;
 }
 
-#menu ul {
-  padding: 0px;
-	margin: 0px;
-	list-style: none;
-  font-family: 'Nunito', sans-serif;
-  font-size: 1rem;
-}
 
-#menu ul li {
-  display: inline;
-  margin:0 0 10px 0; 
-}
 
-#menu ul li {
-  margin-right: 10px;
-}
-
-#menu ul li:last-child {
-  margin-right: 0px;
-}
-
-#menu ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-#menu ul li a:hover {
-  color: rgb(223, 223, 223);
-}

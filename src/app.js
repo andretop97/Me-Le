@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 
 const app = express();
 
-mongoose.connect('mongodb+srv://Azuel:123@cluster-4mwx5.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true, dbName: 'mele', useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost:27017/mele', { useNewUrlParser: true, useUnifiedTopology: true })
 mongoose.set('useCreateIndex', true);
 mongoose.set('useFindAndModify', false);
 

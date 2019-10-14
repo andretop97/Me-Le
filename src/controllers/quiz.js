@@ -21,7 +21,7 @@ exports.getQuizes = async (req, res, next) => {
 
 exports.getQuiz = async (req, res, next) => {
 	try {
-		console.log(req.body.id)
+		console.log("oi: " + req.body.id)
 		let data = await Quiz.findOne({'_id': req.body.id})
 		console.log(data)
     if (data != null)

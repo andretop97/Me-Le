@@ -72,6 +72,7 @@ function restoureChecked() {
 
 $("[name='q'").on("change", function (e) {
   marked[position] = this.value
+  console.log(marked)
 });
 
 function next() {
@@ -118,7 +119,8 @@ function send() {
       idUser: sessionStorage.getItem('idUser')
     }).then((response) => {
       let data = response.data
-      alert('vc acertou: ' + data.points)
+      alert('Você acertou: ' + data.points + ' questões!')
+      window.location.href = "http://localhost:3000/home"
     }).catch((error) => {
       console.log(error.response);
     });
