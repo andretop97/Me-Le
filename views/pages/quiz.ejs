@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ../partials/head.ejs %>
+  <script src="js/app.js"></script>
+  <link rel="stylesheet" href="css/quiz.css">
+  <link rel="stylesheet" href="css/app.css">
+
+</head>
+<body>
+  <header id="menu">
+    <% include ../partials/header.ejs %>
+  </header>
+  
+  <main id="container">
+  
+      <div class="grid">
+          <div id="quiz">
+              
+              <p id="question" align="justify">The question is?</p>
+   
+              <div class="buttons">
+                <div class="labelQuest">
+                    <input id="a" type="radio" name="q" value="a">
+                    <span id="aAlt" align="justify"></span>
+                </div>
+                <div class="labelQuest">
+                    <input id="b" type="radio" name="q" value="b">
+                    <span id="bAlt" align="justify"></span>
+                </div> 
+                <div class="labelQuest">
+                    <input id="c" type="radio" name="q" value="c">
+                    <span id="cAlt" align="justify"></span>
+                </div>
+                <div class="labelQuest">
+                    <input id="d" type="radio" name="q" value="d">
+                    <span id="dAlt" align="justify"></span>
+                </div>
+              </div>
+
+              <div id="nextBack">
+                <button onclick="back()" class="btn" style="font-size: 25px;"><i class="fa fa-chevron-left"></i></button>
+                <button onclick="next()" class="btn" style="font-size: 25px;"><i class="fa fa-chevron-right"></i></button>
+              </div>
+
+              <div id="cancelConfirm">
+                
+                <button onclick="cancel()" type="button" class="btn btn-warning" style="margin-right: 10px;">Cancelar</button>
+                <button onclick="send()" type="button" class="btn btn-success">Enviar</button>
+                
+              </div>
+
+              <hr>
+              
+              <p id="cont"></p>
+          </div>
+      </div>
+  </main>
+  <script src="js/quiz.js"></script>
+</body>
+</html>

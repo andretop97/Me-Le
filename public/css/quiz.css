@@ -1,0 +1,53 @@
+.grid {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 10px 50px 50px 50px;
+  border: 2px solid #cbcbcb;
+}
+
+.grid #question {
+  font-family: "monospace";
+  font-size: 30px;
+}
+
+.buttons {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  background: rgb(238, 238, 238);
+  padding: 15px;
+}
+
+.labelQuest {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align-items: center;
+}
+
+.labelQuest > span {
+  margin-left: 15px;
+  padding: 10px;
+}
+
+#nextBack {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+#cancelConfirm {
+  padding: 15px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  background: rgb(238, 238, 238);
+}
+
+#cont {
+  margin-top: 15px;
+  color: green;
+}
