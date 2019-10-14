@@ -119,6 +119,8 @@ function send() {
       idUser: sessionStorage.getItem('idUser')
     }).then((response) => {
       let data = response.data
+      //sessionStorage.setItem('quizDone', data.userQuizDone)
+      //console.log(data.userQuizDone)
       alert('Você acertou: ' + data.points + ' questões!')
       window.location.href = "http://localhost:3000/home"
     }).catch((error) => {

@@ -60,7 +60,7 @@ exports.validadeQuiz = async (req, res, next) => {
 			user.save()
 		}
 
-		res.status(200).send({points: points})
+		res.status(200).send({points: points, userQuizDone: user.quizDone})
 		
 	} catch (e) {
 		res.status(500).send({
